@@ -1,3 +1,38 @@
-<p>
-  new-item works!
-</p>
+<div class="page-header">
+  <h2>{{newItemTitle}}</h2>
+</div>
+<div class="container">
+  <div class="form-group typeOfArchive">
+    <label >Type of archive:</label>
+    <ul class="nav nav-pills">
+      <li role="presentation" id="serie" [className]="serieClass" (click)="newSerie()"><a style="cursor:default">Serie</a></li>
+      <li role="presentation" id="film" [className]="filmClass" (click)="newFilm()"><a style="cursor:default">Movie</a></li>
+    </ul>
+  </div>
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input class="form-control" type="text" id="name"/>
+  </div>
+  <div class="form-group">
+    <label for="language">Language:</label>
+     <select class="form-control" id="language">
+      <option value="volvo">Spanish</option>
+      <option value="saab">English</option>
+      <option value="mercedes">Chinnese</option>
+      <option value="audi">French</option>
+      <option value="mercedes">German</option>
+      <option value="audi">Japannese</option>
+    </select> 
+  </div>
+
+  <film-input [style.display]="displayFilm"></film-input>
+  <serie-input [style.display]="displaySerie"></serie-input>
+
+  <div class="form-group" >
+      <label for="file">File of Torrent:</label>
+      <input  class="form-control" type="file" id="file"/>
+  </div>
+
+  <button class="btn btn-info">Download</button>
+  
+</div>

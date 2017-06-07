@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NotificationComponent implements OnInit {
 
+  notificationTitle:string;
+
   constructor() { }
 
   ngOnInit() {
+    this.notificationTitle="Notifications";
   }
 
 }

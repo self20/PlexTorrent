@@ -1,0 +1,15 @@
+.container{
+    text-align: left;
+}
+.typeOfArchive > ul{
+    margin: 2%;
+    font-size: 39px;
+
+}
+.form-group{
+    font-size: 20px;
+}
+#file{
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
